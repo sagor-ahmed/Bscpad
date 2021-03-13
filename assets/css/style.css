@@ -1,0 +1,785 @@
+@charset "UTF-8";
+/*-----------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------
+
+    CSS INDEX
+    ===================
+    01. Theme default CSS	
+    02. Header CSS
+    03. Banner CSS	
+    04.About CSS	
+    05.pricing CSS
+    05. Footer CSS	
+    00. Responsive CSS	
+
+-----------------------------------------------------------------------------------*/
+/*----------------------------------------*/
+/*  01. Theme default CSS
+/*----------------------------------------*/
+/* 1. Theme default css */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open sans", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #848b8a;
+    line-height: 27px;
+}
+
+.w-img img {
+    width: 100%;
+}
+
+.m-img img {
+    max-width: 100%;
+}
+
+a,
+.btn,
+button,
+span,
+p,
+input,
+select,
+textarea,
+li,
+img,
+*::after,
+*::before,
+.transition-3,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+
+
+a:focus,
+.button:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+a:focus,
+a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+a,
+button {
+    color: inherit;
+    outline: none;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:focus {
+    outline: 0;
+    border: 0;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Open Sans", sans-serif;
+    color: #000;
+    margin-top: 0px;
+    line-height: 1;
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 27px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none !important;
+}
+
+
+
+p {
+    font-family: "Open sans", sans-serif !important;
+    font-size: 16px;
+    color: #848b8a;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    line-height: 27px;
+}
+
+*::-moz-selection {
+    background: #005046;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+::-moz-selection {
+    background: #005046;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+::selection {
+    background: #005046;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+/*--
+    - Input Placeholder
+-----------------------------------------*/
+
+*::-webkit-input-placeholder {
+    color: #00235a;
+    font-size: 14px;
+    opacity: 1;
+}
+
+*:-ms-input-placeholder {
+    color: #00235a;
+    font-size: 14px;
+    opacity: 1;
+}
+
+*::placeholder {
+    color: #00235a;
+    font-size: 14px;
+    opacity: 1;
+}
+
+/*--
+    - Common Classes
+-----------------------------------------*/
+.fix {
+    overflow: hidden;
+}
+
+.clear {
+    clear: both;
+}
+
+.f-left {
+    float: left;
+}
+
+.f-right {
+    float: right;
+}
+
+.p-relative {
+    position: relative;
+}
+
+.p-absolute {
+    position: absolute;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+/*--
+    - Background color
+-----------------------------------------*/
+
+
+/*====================*/
+
+.me-2 {
+    margin-right: .5rem !important;
+}
+
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
+
+/*====================*/
+
+
+/*--
+    - color
+-----------------------------------------*/
+.text-white h1,
+.text-white h2,
+.text-white h3,
+.text-white h4,
+.text-white h5,
+.text-white h6,
+.text-white p,
+.text-white span,
+.text-white li,
+.text-white a {
+    color: #ffffff !important;
+}
+
+.white-color {
+    color: #ffffff;
+}
+
+.green-color {
+    color: #005046 !important;
+}
+
+.black-color {
+    color: #00235a;
+}
+
+/* spacing margin and padding */
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+.mt-105 {
+    margin-top: -105px;
+}
+
+#scroll a {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-box-shadow: 1px 2px 20px rgb(0 0 0 / 10%);
+    box-shadow: 1px 2px 20px rgb(0 0 0 / 10%);
+    background-color: #fff;
+    color: #f1ba13;
+    font-size: 26px;
+    cursor: pointer !important;
+    z-index: 99;
+    -webkit-transition: all ease-in-out .2s;
+    transition: all ease-in-out .2s;
+}
+
+/*button*/
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: -webkit-gradient(linear, left top, right top, from(#f1b90c), to(#F0B90B));
+    background: linear-gradient(to right, #f1b90c, #F0B90B);
+    border: 1px #f1b90c solid !important;
+    color: #fff !important;
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+    -webkit-box-shadow: 1px 0 2px #ff1baf5d;
+    box-shadow: 1px 0 2px #ff1baf5d;
+    font-size: 1rem;
+    -webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    padding: 10px 30px !important;
+    letter-spacing: 0.1em;
+    min-width: 120px;
+    font-size: 15px;
+    line-height: 25px;
+    text-transform: uppercase;
+    border-radius: 40px;
+    font-weight: 500;
+}
+
+
+.btn-h {
+    background: transparent;
+    color: #f1b90c !important;
+}
+
+.btn-h:hover {
+    background: -webkit-gradient(linear, left top, right top, from(#f1b90c), to(#F0B90B));
+    background: linear-gradient(to right, #f1b90c, #F0B90B);
+    -webkit-box-shadow: 1px 2px 15px #f1b90c;
+    box-shadow: 1px 2px 15px #f1b90c;
+    color: #fff !important;
+}
+
+
+.btn-primary,
+.btn-outline-primary {
+    background: -webkit-gradient(linear, left top, right top, from(#f1b90c), to(#F0B90B));
+    background: linear-gradient(to right, #f1b90c, #F0B90B);
+    border: 1px #f1b90c solid !important;
+    border-radius: 20px;
+    color: #fff !important;
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+    -webkit-box-shadow: 1px 0 2px #ff1baf5d;
+    box-shadow: 1px 0 2px #ff1baf5d;
+}
+
+.btn {
+    outline: none !important;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.btn-lg {
+    padding: 10px 30px !important;
+    letter-spacing: 0.1em;
+    min-width: 120px;
+    font-size: 16px;
+    line-height: 25px;
+    text-transform: uppercase;
+    border-radius: 40px;
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    -webkit-transition: all ease-in-out 0.2s;
+    transition: all ease-in-out 0.2s;
+    /* opacity: .8; */
+    -webkit-box-shadow: 1px 2px 15px #f1b90c;
+    box-shadow: 1px 2px 15px #f1b90c;
+    color: #fff !important;
+}
+
+
+
+
+.btn:hover {
+    -webkit-transition: all ease-in-out 0.2s;
+    transition: all ease-in-out 0.2s;
+    /* opacity: .8; */
+    -webkit-box-shadow: 1px 2px 15px #f1b90c;
+    box-shadow: 1px 2px 15px #f1b90c;
+    color: #fff !important;
+}
+
+
+
+
+
+/*===================================================================================*/
+/*  02. HEADER CSS START
+/*===================================================================================*/
+
+/*
+=============== 
+Navbar
+===============
+*/
+nav {
+    background: #f9f9f9;
+    -webkit-box-shadow: 0px 1px 10px 0px rgb(0 0 0 / 50%);
+    box-shadow: 0px 1px 10px 0px rgb(0 0 0 / 50%);
+
+}
+
+.nav-header {
+    font-weight: bold;
+    color: #f1b90c !important;
+    font-size: 26px;
+    line-height: 1;
+}
+
+.nav-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 1rem;
+
+}
+
+.nav-toggle {
+    font-size: 1.5rem;
+    color: #000;
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    float: right;
+}
+
+.nav-toggle i {
+    color: #ffa906;
+}
+
+.logo {
+    height: 40px;
+}
+
+.links a {
+    color: #f1b90c;
+    font-size: 1rem;
+    text-transform: capitalize;
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+.links a:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.links {
+    height: 0;
+    overflow: hidden;
+
+}
+
+.show-links {
+    height: 10.9rem;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .nav-center {
+        margin: 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+
+    .nav-header {
+        padding: 0;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .links {
+        height: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .links a {
+        padding: 0;
+        margin: 0 0.5rem;
+    }
+
+    .links a:hover {
+        padding: 0;
+        background: transparent;
+        color: #fff;
+    }
+
+}
+
+
+.navbar-menu {
+    background-color: #1a1a1a !important;
+    color: #fff;
+}
+
+.navbar-menu {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    -webkit-box-shadow: 0px 1px 5px 0px rgb(59 55 188 / 30%);
+    box-shadow: 0px 1px 5px 0px rgb(59 55 188 / 30%);
+}
+
+
+.navbar-menu {
+    -webkit-box-shadow: 0px 1px 10px 0px rgb(0 0 0 / 50%);
+    box-shadow: 0px 1px 10px 0px rgb(0 0 0 / 50%);
+}
+
+/*===================================================================================*/
+/*  03. BANNER CSS START
+/*===================================================================================*/
+
+.hero-text h3 {
+    color: #fff;
+}
+
+.hero-text h1 {
+    color: #fff;
+}
+
+
+
+/*===================================================================================*/
+/*  04. COMMON CSS START
+/*===================================================================================*/
+
+/*root*/
+#root {
+    position: relative;
+    padding-bottom: 80px;
+    min-height: 100vh;
+}
+
+
+/*pp homepage*/
+.pp-homepage {
+    position: relative;
+}
+
+.pp-homepage::after {
+    position: fixed;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100vw;
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url("imgs/map.png");
+    z-index: -1 !important;
+    opacity: .05;
+}
+
+body.darkmode .pp-homepage::after {
+    opacity: .3;
+}
+
+body.darkmode,
+body.darkmode .navbar {
+    background-color: #1a1a1a !important;
+    color: #fff;
+}
+
+.pp-home-banner h1 {
+    font-weight: bold;
+    margin-bottom: 1.25rem;
+    line-height: 1.5;
+}
+
+.pp-home-banner {
+    padding: 130px 0;
+    font-size: 20px;
+    text-align: ;
+}
+
+.pp-section {
+    padding: 150px 0;
+    position: relative;
+    overflow-x: hidden;
+    width: 100%;
+    z-index: 2;
+}
+
+.pt-3 {
+    padding-top: 1rem !important;
+}
+
+.section-title h2 {
+    color: #fff;
+}
+
+/*===================================================================================*/
+/*  05. ABOUT CSS START
+/*===================================================================================*/
+
+
+.pp-section .section-title h2 {
+    font-weight: 700;
+    margin-bottom: 0;
+    font-size: 3rem;
+    position: relative;
+    color: #fff;
+}
+
+.about-content-text h3 {
+    font-weight: 500;
+    color: #fff;
+}
+
+/*===================================================================================*/
+/*  06. PRICING CSS START
+/*===================================================================================*/
+
+
+.pp-section-body p {
+    color: rgba(255, 255, 255, .6);
+}
+
+.pricing-table p {
+    color: rgba(255, 255, 255, .6);
+}
+
+.text-warning {
+    color: #ffc107 !important;
+}
+
+.price-header {
+    font-size: 26px;
+    white-space: nowrap;
+}
+
+.price span {
+    font-size: 36px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.value span {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.pricing-table {
+    text-align: center;
+    cursor: default;
+    margin: 0 auto;
+    width: 100%;
+    padding: 30px;
+    background-color: rgb(31 31 33);
+    border-radius: 10px;
+    -webkit-box-shadow: 0 10px 30px 0 rgb(5 16 44 / 15%);
+    box-shadow: 0 10px 30px 0 rgb(5 16 44 / 15%);
+    -webkit-transition: .4s;
+    transition: .4s;
+    margin-bottom: 25px;
+}
+
+.pricing-table:hover {
+    -webkit-box-shadow: 0 20px 30px 0 rgb(5 16 44 / 18%);
+    box-shadow: 0 20px 30px 0 rgb(5 16 44 / 20%);
+    -webkit-transform: translateY(-3px) scale(1.01);
+    transform: translateY(-3px) scale(1.01);
+}
+
+hr {
+    margin: 1rem 0;
+    color: inherit;
+    background-color: currentColor;
+    border: 0;
+    opacity: .25;
+}
+
+hr:not([size]) {
+    height: 1px;
+    display: block;
+    margin-left: 25px;
+}
+
+
+.row > * {
+
+    width: 100%;
+    max-width: 100%;
+  
+}
+
+p.bold.price-header {
+    margin-left: 18px;
+}
+
+/*===================================================================================*/
+/*  07. FOOTER CSS START
+/*===================================================================================*/
+
+
+.pp-footer {
+    padding: 15px 0;
+    font-size: 14px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    /* background-color: #000; */
+}

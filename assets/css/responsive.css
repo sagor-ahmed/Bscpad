@@ -1,0 +1,169 @@
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+
+@media (min-width: 1400px) .container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+    max-width: 1200px !important;
+}
+
+@media (min-width: 1600px) {
+    .container {
+        max-width: 1500px
+    }
+}
+
+@media (min-width: 1800px) {
+    .container {
+        max-width: 1680px
+    }
+
+}
+
+@media (min-width: 2000px) {
+    .container {
+        max-width: 1800px
+    }
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1800px) {
+    .nav-center {
+        max-width: 1475px;
+    }
+
+}
+
+
+@media (min-width: 1801px) {
+    .nav-center {
+        max-width: 1650px;
+    }
+}
+
+
+/* laptop devices 1200 - 1600 */
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {}
+
+
+/* large devices 992 - 1199*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .pp-home-banner h1 {
+        font-size: 33px;
+    }
+
+
+
+}
+
+
+/* Medium devices 768 - 991 */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .pp-home-banner h1 {
+        font-size: ;
+    }
+
+    .hero-text h3 {
+        font-size: 24px;
+    }
+
+    p.bold.price-header {
+        margin-left: 3px;
+    }
+
+}
+
+
+/* Small devices 576 - 767 */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+    .pp-home-banner h1 {
+        font-size: 32px;
+    }
+
+    .nav-toggle {
+        position: absolute;
+        right: 0;
+    }
+
+    .nav-header span {
+        position: absolute;
+        left: 11%;
+    }
+
+    .nav-header {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 1rem;
+        position: relative;
+    }
+
+    .pricing-table p {
+        font-size: 25px;
+    }
+
+}
+
+/* Small devices 0 - 575 */
+@media (max-width: 575px) {
+
+    .nav-toggle {
+        position: absolute;
+        right: 0;
+    }
+
+    .nav-header span {
+        position: absolute;
+        left: 11%;
+    }
+
+    .nav-header {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 1rem;
+        position: relative;
+    }
+
+    .pp-home-banner h1 {
+        font-size: 25px;
+    }
+
+    .hero-text h3 {
+        color: #fff;
+        font-size: 22px;
+    }
+
+    p.bold.price-header {
+        margin-left: 18px;
+        font-size: 22px;
+    }
+
+    .price span {
+        font-size: 26px;
+    }
+}
+
+
+@media (max-width: 475px) {
+    .nav-header span {
+        display: none;
+    }
+
+}
